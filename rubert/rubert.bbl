@@ -1,0 +1,17 @@
+\begin{thebibliography}{1}
+
+\bibitem{gurutalk2015}
+Yahoo internal gemini guru talk 2015, https://docs.google.com/ spreadsheets/d/
+  1b7mxua0rivzwq\_kongrrldye5g\_qqi7yc4ruqku17us/ edit\#gid=0.
+
+\bibitem{Rosie:2003}
+R.~Jones and D.~C. Fain.
+\newblock Query word deletion prediction.
+\newblock In {\em SIGIR '03}.
+
+\bibitem{Rosie:2007}
+R.~Jones, B.~Rey, O.~Madani, and W.~Greiner.
+\newblock Generating query substitutions.
+\newblock In {\em WWW'07}.
+
+\end{thebibliography}

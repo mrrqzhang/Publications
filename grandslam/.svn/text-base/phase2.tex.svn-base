@@ -1,0 +1,127 @@
+
+
+
+Phase 1 performs a coarse ranking where a linear scoring function is applied 
+to ensure fast and high recall article selection. Phase 1 passes 200 articles 
+to Phase 2, which uses a more complicated ranking model to improve high 
+quality. The number 200 was selected according to Phase 2 complexity and 
+system latency constraints. 
+
+Phase 2 ranking model integrates various type of features.  Due to the 
+importance of recency in news recommendation, it is the first issue to 
+consider. By assumption, users prefer fresh contents. A rankig model with a 
+time sensitive feature can promote recency. However, it has been observed that 
+promoting recency can cause relevant documents to be ranked lower. Some 
+solutions are proposed in~\cite{Dong:2010:TRR:1718487.1718490}. Document age 
+is the most available indicator of the recency of the article content. Thus we 
+use it as a feature in phase 2.
+
+
+Article popularity $gmp$ is also used as a feature, as described in 
+section~\ref{sec:feature engineering}. $gmp$ is not stream dependent, but is 
+calculated by using user actions on the Top Stream, as shown in 
+Fig.~\ref{hierarchy} because the Top Stream has larger user traffic to derive 
+reliable CTR.
+
+Lastly, content based features are used. These are extracted from document 
+profile explained in section~\ref{sec:feature engineering}, and include total 
+numbers of entities and categories, sum of aboutness scores and other 
+arithmetic transformations of aboutness scores. Similar features are generated 
+based on user profile such as number of user inferred entities and categories, 
+sum of sparse polarity scores, and related arithmetic transformations of 
+sparse polarity scores.
+
+Correlations between the user profile and the document profile give rise to a 
+few more features. Other than a single dot product used in Phase 1 that 
+combines entities and categories, Phase 2 separates features from entity and 
+from category. For example, features may include the number of matched entities between the user 
+and the document, the number of matched categories, dot product of sparse 
+polarity and aboutness scores between entities, dot product between 
+categories, and the total dot product between all entities and categories.
+
+A very special feature that is unique for our system is the identity of the 
+stream, or stream-id.  This is a categorical feature. The feature defines 
+which stream the article belongs to. In the hiearchical 
+structure Fig.~\ref{hierarchy}, each node is assigned an identification number. All 
+articles in this stream have the same ID. The feature is assigned values 
+according to its source. If it is from NFL, then stream-id=``nfl". We will 
+show in the experiments this feature is very useful.  
+
+
+The training is based on clicks. To collect training data, we set up a data 
+collection bucket to get online users' response to recommended articles.  The 
+articles are presented to a user in the format of a scrollable stream. Only 
+title and a short summary are shown. The user can scroll the articles in the 
+stream until she finds an interesting one. Then she may click the article and 
+goes to the landing page to read the complete article. A click is a positive 
+training example, which proves the article is worth recommending. On the 
+contrary, skipped articles are those that are not clicked but are displayed 
+above any clicked articles in a single stream session. Skipped articles are 
+viewed but not clicked.  They form our negative examples. For those articles 
+below clicked articles, we do not know if the user viewed them or not because 
+the user had no action on these articles. These articles were not used in 
+training.  
+
+To avoid ranking bias and position bias, we used an exploration bucket (not 
+exploitation bucket) ~\cite{Li:2010:CAP:1772690.1772758} . Articles in the 
+exploration bucket were ordered not based on any feature and model but 
+randomly.
+
+Our training data generation is formalized as follows. If user $i$ clicks some 
+articles in the stream, we generate training examples, 
+${(x_{0}^{i},y_{0}^{i},w_{0}^{i}),(x_{1}^{i},y_{1}^{i},w_{1}^{i}),\cdots,(x_{j}^{i},y_{j}^{i},w_{j}^{i}),\cdots,(x_{N}^{i},y_{N}^{i},w_{N}^{i})}$.
+ Each example consists of triplet produced by user $i$ on article $j$. 
+$x_{j}^{i}$ corresponds to feature vector of the $j$th article and the user 
+$i$ . $y_{j}^{i}$ is a $\{0,1\}$ binary-valued label. If $j$ is a clicked 
+article, 
+then $y_{j}^{i}=1$. It is 0 otherwise.  $w_{j}^{i}$ is the weight of the 
+training example, whose value is equal to one plus the logarithm of the 
+dwell-time of the click event. The latter is defined to be the time spent 
+reading the full article $j$, that is, the duration from when user $i$ clicks 
+the article to when he leaves the article.  Only clicked articles have 
+dwell-time. $w_{j}^{i}=1$ for skipped articles.  $N$ is the index of the last 
+clicked article. The total article number is 200, but in reality $N \le 200$ 
+due to discarding non-viewed articles from training. 
+
+The feature vector $x_j^i$ is defined by
+$$x_{j}^{i}=(age, gmp, streamid, u_{i}, d_{j}, u_{i} \circ d_{j})$$.
+
+Here, $age$ denotes document age. $u_{i}$ and $d_i$ denotes a few features 
+generated from user and document profiles respectively.  $u_{i} \circ d_{j}$ 
+are correlative features between the two.
+
+
+Given training examples $(x_{j}^{i},y_{j}^{i},w_{j}^{i}), i \in (1,M), j \in 
+(1,N_{i})$, $M$ the total number of users and $N_{i}$ the number of samples 
+for user $i$, we can apply multiple machine learning methods to learn a 
+regression model. 
+We employ Gradient Boosted Decision Tree (GBDT) 
+algorithm~\cite{Friedman:2002,Ye:2009} as the learning method of choice. This 
+algorithm has higher precision, not sensitive to over-training, and supports 
+category features, for instance, stream-id. GBDT is an
+additive regression algorithm consisting of an ensemble of trees,
+fitted to current residuals, gradients of the loss function, in a
+forward step-wise manner. It iteratively fits an additive model as
+%\begin{align}
+$$
+f_t(x) = T_t(x; \Theta) + \lambda \sum_{t=1}^T \beta_t T_t(x; \Theta_t)
+$$
+%\end{align}
+\noindent such that certain loss function $L(y_i, f_T (x + i))$ is
+minimized, where $T_t(x;\Theta_t)$ is a tree at iteration $t$,
+weighted by parameter $\beta_t$, with a finite number of parameters,
+$\Theta_t$; $\lambda$ is the learning rate. At iteration $t$, tree
+$T_t(x; \beta)$ is induced to fit the negative gradient by least
+squares.
+
+
+\noindent The optimal weights of trees $\beta_t$ are determined by
+%\begin{align*}
+$$
+\beta_t = \text{argmin} _{\beta} \sum_i^N L(y_i, f_{t-1}(x_i) + \beta T(x_i, \theta))
+$$
+%\end{align*} 
+
+
+
+

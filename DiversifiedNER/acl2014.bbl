@@ -1,0 +1,194 @@
+\begin{thebibliography}{}
+
+\bibitem[\protect\citename{Asahara and
+  Matsumoto}2003]{Asahara:2003:JNE:1073445.1073447}
+Masayuki Asahara and Yuji Matsumoto.
+\newblock 2003.
+\newblock Japanese named entity extraction with redundant morphological
+  analysis.
+\newblock In {\em Proceedings of the 2003 Conference of the North American
+  Chapter of the Association for Computational Linguistics on Human Language
+  Technology - Volume 1}, NAACL '03, pages 8--15, Stroudsburg, PA, USA.
+  Association for Computational Linguistics.
+
+\bibitem[\protect\citename{Black \bgroup et al.\egroup }1993]{Black:1993}
+Ezra~W. Black, Roger Garside, and Geoffrey~N. Leech, 1993.
+\newblock {\em Statistically-driven computer grammars of English: The
+  IBM/Lancaster approach.}
+\newblock Vol. 8. Rodopi.
+
+\bibitem[\protect\citename{Chieu and Ng}2003]{Chieu:2003:NER:1119176.1119199}
+Hai~Leong Chieu and Hwee~Tou Ng.
+\newblock 2003.
+\newblock Named entity recognition with a maximum entropy approach.
+\newblock In {\em Proceedings of the Seventh Conference on Natural Language
+  Learning at HLT-NAACL 2003 - Volume 4}, CONLL '03, pages 160--163,
+  Stroudsburg, PA, USA. Association for Computational Linguistics.
+
+\bibitem[\protect\citename{Collins and Singer}1999]{Collins:1999}
+Michael Collins and Yoram Singer.
+\newblock 1999.
+\newblock Unsupervised models for named entity classification.
+\newblock In {\em Joint SIGDAT Conference on Empirical Methods in Natural
+  Language Processing and Very Large Corpora}.
+
+\bibitem[\protect\citename{Collobert \bgroup et al.\egroup
+  }2011]{collobert:2011b}
+R.~Collobert, J.~Weston, L.~Bottou, M.~Karlen, K.~Kavukcuoglu, and P.~Kuksa.
+\newblock 2011.
+\newblock Natural language processing (almost) from scratch.
+\newblock {\em Journal of Machine Learning Research}, 12:2493--2537.
+
+\bibitem[\protect\citename{Etzioni \bgroup et al.\egroup
+  }2005]{Etzioni:2005:UNE:1090483.1090487}
+Oren Etzioni, Michael Cafarella, Doug Downey, Ana-Maria Popescu, Tal Shaked,
+  Stephen Soderland, Daniel~S. Weld, and Alexander Yates.
+\newblock 2005.
+\newblock Unsupervised named-entity extraction from the web: An experimental
+  study.
+\newblock {\em Artif. Intell.}, 165(1):91--134, June.
+
+\bibitem[\protect\citename{Friedman}2002]{Friedman:2002}
+Jerome~H. Friedman.
+\newblock 2002.
+\newblock Stochastic gradient boosting.
+\newblock {\em Comput. Stat. Data Anal.}, 38(4):367--378, February.
+
+\bibitem[\protect\citename{Guo \bgroup et al.\egroup }2009]{Guo:2009:NER}
+Jiafeng Guo, Gu~Xu, Xueqi Cheng, and Hang Li.
+\newblock 2009.
+\newblock Named entity recognition in query.
+\newblock In {\em Proceedings of the 32nd international ACM SIGIR conference on
+  Research and development in information retrieval}, SIGIR '09, pages
+  267--274, New York, NY, USA. ACM.
+
+\bibitem[\protect\citename{Hagen \bgroup et al.\egroup }2012]{Hagen:2012}
+Matthias Hagen, Martin Potthast, Anna Beyer, and Benno Stein.
+\newblock 2012.
+\newblock Towards optimum query segmentation: in doubt without.
+\newblock In {\em Proceedings of the 21st ACM international conference on
+  Information and knowledge management}, CIKM '12, pages 1015--1024, New York,
+  NY, USA. ACM.
+
+\bibitem[\protect\citename{Jarvelin and Kekalainen}2000]{NDCG2000}
+Kalervo Jarvelin and Jaana Kekalainen.
+\newblock 2000.
+\newblock {IR} evaluation methods for retrieving highly relevant documents.
+\newblock In {\em SIGIR}, pages 41--48.
+
+\bibitem[\protect\citename{Ji and Grishman}2006]{Ji:2006:DSS:1641408.1641414}
+Heng Ji and Ralph Grishman.
+\newblock 2006.
+\newblock Data selection in semi-supervised learning for name tagging.
+\newblock In {\em Proceedings of the Workshop on Information Extraction Beyond
+  The Document}, IEBeyondDoc '06, pages 48--55, Stroudsburg, PA, USA.
+  Association for Computational Linguistics.
+
+\bibitem[\protect\citename{Lafferty \bgroup et al.\egroup }2001]{lafferty:2001}
+John~D. Lafferty, Andrew McCallum, and Fernando C.~N. Pereira.
+\newblock 2001.
+\newblock Conditional random fields: Probabilistic models for segmenting and
+  labeling sequence data.
+\newblock In {\em Proceedings of the Eighteenth International Conference on
+  Machine Learning}, ICML '01, pages 282--289, San Francisco, CA, USA. Morgan
+  Kaufmann Publishers Inc.
+
+\bibitem[\protect\citename{Lin \bgroup et al.\egroup }2012]{Lin:2012}
+Thomas Lin, Patrick Pantel, Michael Gamon, Anitha Kannan, and Ariel Fuxman.
+\newblock 2012.
+\newblock Active objects: actions for entity-centric search.
+\newblock In {\em Proceedings of the 21st international conference on World
+  Wide Web}, WWW '12, pages 589--598, New York, NY, USA. ACM.
+
+\bibitem[\protect\citename{Magerman}1995]{Magerman95statisticaldecision-tree}
+David~M. Magerman.
+\newblock 1995.
+\newblock Statistical decision-tree models for parsing.
+\newblock In {\em In Proceedings of the 33rd Annual Meeting of the Association
+  for Computational Linguistics}, pages 276--283.
+
+\bibitem[\protect\citename{McCallum and
+  Li}2003]{McCallum:2003:ERN:1119176.1119206}
+Andrew McCallum and Wei Li.
+\newblock 2003.
+\newblock Early results for named entity recognition with conditional random
+  fields, feature induction and web-enhanced lexicons.
+\newblock In {\em Proceedings of the Seventh Conference on Natural Language
+  Learning at HLT-NAACL 2003 - Volume 4}, CONLL '03, pages 188--191,
+  Stroudsburg, PA, USA. Association for Computational Linguistics.
+
+\bibitem[\protect\citename{Mikolov and Zweig}2012]{Mikolov:2012}
+Tomas Mikolov and Geoffrey Zweig.
+\newblock 2012.
+\newblock Context dependent recurrent neural network language model.
+\newblock In {\em Spoken Language Technologies}. IEEE.
+
+\bibitem[\protect\citename{Pantel \bgroup et al.\egroup
+  }2012]{Pantel:2012:MET:2390524.2390603}
+Patrick Pantel, Thomas Lin, and Michael Gamon.
+\newblock 2012.
+\newblock Mining entity types from query logs via user intent modeling.
+\newblock In {\em Proceedings of the 50th Annual Meeting of the Association for
+  Computational Linguistics: Long Papers - Volume 1}, ACL '12, pages 563--571,
+  Stroudsburg, PA, USA. Association for Computational Linguistics.
+
+\bibitem[\protect\citename{Riloff and
+  Jones}1999]{Riloff:1999:LDI:315149.315364}
+Ellen Riloff and Rosie Jones.
+\newblock 1999.
+\newblock Learning dictionaries for information extraction by multi-level
+  bootstrapping.
+\newblock In {\em Proceedings of the Sixteenth National Conference on
+  Artificial Intelligence and the Eleventh Innovative Applications of
+  Artificial Intelligence Conference Innovative Applications of Artificial
+  Intelligence}, AAAI '99/IAAI '99, pages 474--479, Menlo Park, CA, USA.
+  American Association for Artificial Intelligence.
+
+\bibitem[\protect\citename{Sha and Pereira}2003]{Sha:2003:SPC:1073445.1073473}
+Fei Sha and Fernando Pereira.
+\newblock 2003.
+\newblock Shallow parsing with conditional random fields.
+\newblock In {\em Proceedings of the 2003 Conference of the North American
+  Chapter of the Association for Computational Linguistics on Human Language
+  Technology - Volume 1}, NAACL '03, pages 134--141, Stroudsburg, PA, USA.
+  Association for Computational Linguistics.
+
+\bibitem[\protect\citename{Shen \bgroup et al.\egroup }2003]{Shen:NER}
+Dan Shen, Jie Zhang, Guodong Zhou, Jian Su, and Chew-Lim Tan, 2003.
+\newblock {\em Proceedings of the ACL 2003 Workshop on Natural Language
+  Processing in Biomedicine}, chapter Effective Adaptation of Hidden Markov
+  Model-based Named Entity Recognizer for Biomedical Domain.
+
+\bibitem[\protect\citename{Soong \bgroup et al.\egroup
+  }2005]{Soong_generalizedword}
+Frank~K. Soong, Wai kit Lo, and Satoshi Nakamura.
+\newblock 2005.
+\newblock Generalized word posterior probability (gwpp) for measuring
+  reliability of recognized words.
+
+\bibitem[\protect\citename{Tjong Kim~Sang and
+  De~Meulder}2003]{TjongKimSang:2003:ICS:1119176.1119195}
+Erik~F. Tjong Kim~Sang and Fien De~Meulder.
+\newblock 2003.
+\newblock Introduction to the conll-2003 shared task: Language-independent
+  named entity recognition.
+\newblock In {\em Proceedings of the Seventh Conference on Natural Language
+  Learning at HLT-NAACL 2003 - Volume 4}, CONLL '03, pages 142--147,
+  Stroudsburg, PA, USA. Association for Computational Linguistics.
+
+\bibitem[\protect\citename{Xue and Shen}2003]{Xue:2003:CWS:1119250.1119278}
+Nianwen Xue and Libin Shen.
+\newblock 2003.
+\newblock Chinese word segmentation as lmr tagging.
+\newblock In {\em Proceedings of the Second SIGHAN Workshop on Chinese Language
+  Processing - Volume 17}, SIGHAN '03, pages 176--179, Stroudsburg, PA, USA.
+  Association for Computational Linguistics.
+
+\bibitem[\protect\citename{Ye \bgroup et al.\egroup }2009]{Ye:2009}
+Jerry Ye, Jyh-Herng Chow, Jiang Chen, and Zhaohui Zheng.
+\newblock 2009.
+\newblock Stochastic gradient boosted distributed decision trees.
+\newblock In {\em Proceedings of the 18th ACM conference on Information and
+  knowledge management}, CIKM '09, pages 2061--2064, New York, NY, USA. ACM.
+
+\end{thebibliography}

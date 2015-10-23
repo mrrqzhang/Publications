@@ -1,0 +1,91 @@
+This is BibTeX, Version 0.99d (TeX Live 2012)
+Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
+The top-level auxiliary file: gs-ranking.aux
+The style file: abbrv.bst
+Database file #1: gs-ranking.bib
+Database file #2: ref1.bib
+Database file #3: ref3.bib
+Repeated entry---line 40 of file ref3.bib
+ : @article{Friedman:2002
+ :                       ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 59 of file ref3.bib
+ : @inproceedings{Ye:2009
+ :                       ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 87 of file ref3.bib
+ : @article{Agarwal:2013:CRW:2461256.2461277
+ :                                          ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 107 of file ref3.bib
+ : @inproceedings{Liu:2010:PNR:1719970.1719976
+ :                                            ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 144 of file ref3.bib
+ : @inproceedings{Garcin:2012:PNR:2457524.2457626
+ :                                               ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 214 of file ref3.bib
+ : @inproceedings{Li:2010:CAP:1772690.1772758
+ :                                           ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 233 of file ref3.bib
+ : @inproceedings{Yue:2014:PCC:2566486.2567991
+ :                                            ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 289 of file ref3.bib
+ : @inproceedings{Agarwal:2013:RIU:2512875.2517150
+ :                                                ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 363 of file ref3.bib
+ : @inproceedings{Wang:2006:UUI:1148170.1148257
+ :                                             ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 473 of file ref3.bib
+ : @inproceedings{Das:2007:GNP:1242572.1242610
+ :                                            ,
+I'm skipping whatever remains of this entry
+Warning--can't use both volume and number fields in ESL
+Warning--empty journal in one-class
+You've used 27 entries,
+            2118 wiz_defined-function locations,
+            692 strings with 10568 characters,
+and the built_in function-call counts, 12403 in all, are:
+= -- 1297
+> -- 577
+< -- 19
++ -- 230
+- -- 200
+* -- 867
+:= -- 1908
+add.period$ -- 99
+call.type$ -- 27
+change.case$ -- 180
+chr.to.int$ -- 0
+cite$ -- 29
+duplicate$ -- 511
+empty$ -- 927
+format.name$ -- 200
+if$ -- 2738
+int.to.chr$ -- 0
+int.to.str$ -- 27
+missing$ -- 28
+newline$ -- 138
+num.names$ -- 54
+pop$ -- 195
+preamble$ -- 1
+purify$ -- 154
+quote$ -- 0
+skip$ -- 390
+stack$ -- 0
+substring$ -- 804
+swap$ -- 188
+text.length$ -- 19
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 106
+warning$ -- 2
+while$ -- 118
+width$ -- 29
+write$ -- 341
+(There were 10 error messages)

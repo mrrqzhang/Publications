@@ -1,0 +1,50 @@
+This is BibTeX, Version 0.99d (TeX Live 2012)
+Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
+The top-level auxiliary file: acl2014.aux
+The style file: acl.bst
+Database file #1: ner.bib
+Warning--empty chapter and pages in Black:1993
+Warning--empty publisher in Black:1993
+Warning--empty publisher in Shen:NER
+You've used 24 entries,
+            2490 wiz_defined-function locations,
+            725 strings with 10319 characters,
+and the built_in function-call counts, 12123 in all, are:
+= -- 1343
+> -- 430
+< -- 17
++ -- 144
+- -- 144
+* -- 863
+:= -- 1803
+add.period$ -- 107
+call.type$ -- 24
+change.case$ -- 166
+chr.to.int$ -- 24
+cite$ -- 27
+duplicate$ -- 555
+empty$ -- 930
+format.name$ -- 179
+if$ -- 2689
+int.to.chr$ -- 1
+int.to.str$ -- 0
+missing$ -- 25
+newline$ -- 143
+num.names$ -- 72
+pop$ -- 191
+preamble$ -- 1
+purify$ -- 192
+quote$ -- 0
+skip$ -- 458
+stack$ -- 0
+substring$ -- 697
+swap$ -- 193
+text.length$ -- 17
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 184
+warning$ -- 3
+while$ -- 102
+width$ -- 26
+write$ -- 373
+(There were 3 warnings)

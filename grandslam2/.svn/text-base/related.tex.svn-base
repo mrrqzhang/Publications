@@ -1,0 +1,42 @@
+
+We have not found similar work on semantic stream classification based on 
+clicks. Many traditional document classification methods are based on static 
+topic definitions and rely heavily on editorial 
+resources~\cite{Sun:2002:WCU:584931.584952}. For instance, web document link 
+structures were exploited to predict document categories in the work 
+of~\cite{Calado:2003:CLC:956863.956938,getoor:ijcaiws01,Calado:2006:LSM:1108519.1108533}.
+ However, streams change in topical coverage from time to time, and can be 
+created or updated on demand to reflect popular need. In our work, document 
+classifier is a starting point of our stream classifier. On top of it, the 
+stream classifier is rebuilt by optimizing users' click behavior on the 
+steam.  
+
+
+
+
+
+All our models from Phase 0 to Phase 2 are built using targets based on clicks. Using number of clicks as features or target has proved to be effective in many fields, such as recommendation system and search (\cite{Agarwal:2013:CRW:2461256.2461277,Liu:2010:PNR:1719970.1719976}). Some recent work give more up-to-date improvment on using click \cite{Li:2010:CAP:1772690.1772758,Agarwal:2013:RIU:2512875.2517150}.
+
+The logistic regression model used in Phase 0 is a classical supervised approach\cite{ESL}, but the click-based label heuristic appears new. An additional challenge is the number of token features used, which go up in the hundreds of thousands. For the experiments we mainly relied on Vowpal Wabbit \cite{FeatureHashing} and LibLinear \cite{liblinear}, the latter implemented in Weka. 
+
+We also could not find any previous work on the twisted dot-product idea behind Phase 1. However it is closely related to tensor factorization models \cite{rendle2009learning}, \cite{zheng2010flickr}. In our case, the tensor has three dimensions: user, document, and stream, and it is diagonal along each ``stream slice".
+
+Recency is an important metric to consider in recommendation and Web search. 
+However promoting recency tends to undercut personalized relevance, making it 
+difficult to balance the two. Some pioneering 
+work(\cite{Dong:2010:TRR:1718487.1718490}) discussed the problem and proposed 
+solutions, where a recency query classifier is used. We deal with recency by 
+incorporating the recency feature into a machine learned model.
+
+Collaborative filtering is widely used in content 
+recommendation~\cite{Garcin:2012:PNR:2457524.2457626,Yue:2014:PCC:2566486.2567991,Wang:2006:UUI:1148170.1148257,Das:2007:GNP:1242572.1242610}.
+ This approach recommends new articles to the user by virtue of similiar 
+interests with other users that have read the articles. Similar users are 
+grouped by some methods like matrix 
+factorization~\cite{Koren:2009:MFT:1608565.1608614}. If a user has read an  
+article, this article can be recommended to other users within the same 
+group.  Our work is not based on collaborate filtering, but we can use it to 
+derive new users' profile. 
+
+Recently, explore/exploit is a popular strategy~\cite{Agarwal:2013:CRW:2461256.2461277,Agarwal:2013:RIU:2512875.2517150,Li:2010:CAP:1772690.1772758}. These methods are useful for a single stream, but not scalable for multiple semantic streams.  To design a recommendation system we must consider system latency. Explore/exploit strategy is not suitable for this task. But we used the idea of exploration bucket to collect unbiased training data in Phase 2.
+
