@@ -1,0 +1,107 @@
+\begin{thebibliography}{10}
+
+\bibitem{Agarwal:2013:CRW:2461256.2461277}
+D.~Agarwal, B.-C. Chen, P.~Elango, and R.~Ramakrishnan.
+\newblock Content recommendation on web portals.
+\newblock {\em Commun. ACM}, 56(6):92--101, June 2013.
+
+\bibitem{Calado:2006:LSM:1108519.1108533}
+P.~Calado, M.~Cristo, M.~A. Gon\c{c}alves, E.~S. de~Moura, B.~Ribeiro-Neto, and
+  N.~Ziviani.
+\newblock Link-based similarity measures for the classification of web
+  documents.
+\newblock {\em J. Am. Soc. Inf. Sci. Technol.}, 57(2):208--221, Jan. 2006.
+
+\bibitem{Dong:2010:TRR:1718487.1718490}
+A.~Dong, Y.~Chang, Z.~Zheng, G.~Mishne, J.~Bai, R.~Zhang, K.~Buchner, C.~Liao,
+  and F.~Diaz.
+\newblock Towards recency ranking in web search.
+\newblock In {\em Proceedings of the Third ACM International Conference on Web
+  Search and Data Mining}, WSDM '10, pages 11--20, New York, NY, USA, 2010.
+  ACM.
+
+\bibitem{liblinear}
+R.-E. Fan, K.-W. Chang, C.-J. Hsieh, X.-R. Wang, and C.-J. Lin.
+\newblock Liblinear: A library for large linear classification.
+\newblock {\em The Journal of Machine Learning Research}, 9:1871--1874, 2008.
+
+\bibitem{Friedman:2002}
+J.~H. Friedman.
+\newblock Stochastic gradient boosting.
+\newblock {\em Comput. Stat. Data Anal.}, 38(4):367--378, Feb. 2002.
+
+\bibitem{ESL}
+T.~Hastie, R.~Tibshirani, J.~Friedman, T.~Hastie, J.~Friedman, and
+  R.~Tibshirani.
+\newblock {\em The elements of statistical learning}, volume~2.
+\newblock Springer, 2009.
+
+\bibitem{Li:2010:CAP:1772690.1772758}
+L.~Li, W.~Chu, J.~Langford, and R.~E. Schapire.
+\newblock A contextual-bandit approach to personalized news article
+  recommendation.
+\newblock In {\em Proceedings of the 19th International Conference on World
+  Wide Web}, WWW '10, pages 661--670, New York, NY, USA, 2010. ACM.
+
+\bibitem{Li:2003:TLM:956863.956951}
+X.~Li and W.~B. Croft.
+\newblock Time-based language models.
+\newblock In {\em Proceedings of the Twelfth International Conference on
+  Information and Knowledge Management}, CIKM '03, pages 469--475, New York,
+  NY, USA, 2003. ACM.
+
+\bibitem{Liu:2010:PNR:1719970.1719976}
+J.~Liu, P.~Dolan, and E.~R. Pedersen.
+\newblock Personalized news recommendation based on click behavior.
+\newblock In {\em Proceedings of the 15th International Conference on
+  Intelligent User Interfaces}, IUI '10, pages 31--40, New York, NY, USA, 2010.
+  ACM.
+
+\bibitem{Metzler:2009:ISR:1571941.1572085}
+D.~Metzler, R.~Jones, F.~Peng, and R.~Zhang.
+\newblock Improving search relevance for implicitly temporal queries.
+\newblock In {\em Proceedings of the 32Nd International ACM SIGIR Conference on
+  Research and Development in Information Retrieval}, SIGIR '09, pages
+  700--701, New York, NY, USA, 2009. ACM.
+
+\bibitem{tfidf}
+J.~Ramos.
+\newblock Using tf-idf to determine word relevance in document queries.
+\newblock In {\em Proceedings of the First Instructional Conference on Machine
+  Learning}, 2003.
+
+\bibitem{rendle2009learning}
+S.~Rendle, L.~Balby~Marinho, A.~Nanopoulos, and L.~Schmidt-Thieme.
+\newblock Learning optimal ranking with tensor factorization for tag
+  recommendation.
+\newblock In {\em Proceedings of the 15th ACM SIGKDD international conference
+  on Knowledge discovery and data mining}, pages 727--736. ACM, 2009.
+
+\bibitem{Sun:2002:WCU:584931.584952}
+A.~Sun, E.-P. Lim, and W.-K. Ng.
+\newblock Web classification using support vector machine.
+\newblock In {\em Proceedings of the 4th International Workshop on Web
+  Information and Data Management}, WIDM '02, pages 96--99, New York, NY, USA,
+  2002. ACM.
+
+\bibitem{FeatureHashing}
+K.~Weinberger, A.~Dasgupta, J.~Langford, A.~Smola, and J.~Attenberg.
+\newblock Feature hashing for large scale multitask learning.
+\newblock In {\em Proceedings of the 26th Annual International Conference on
+  Machine Learning}, pages 1113--1120. ACM, 2009.
+
+\bibitem{Ye:2009}
+J.~Ye, J.-H. Chow, J.~Chen, and Z.~Zheng.
+\newblock Stochastic gradient boosted distributed decision trees.
+\newblock In {\em Proceedings of the 18th ACM conference on Information and
+  knowledge management}, CIKM '09, pages 2061--2064, New York, NY, USA, 2009.
+  ACM.
+
+\bibitem{zheng2010flickr}
+N.~Zheng, Q.~Li, S.~Liao, and L.~Zhang.
+\newblock Flickr group recommendation based on tensor decomposition.
+\newblock In {\em Proceedings of the 33rd international ACM SIGIR conference on
+  Research and development in information retrieval}, pages 737--738. ACM,
+  2010.
+
+\end{thebibliography}

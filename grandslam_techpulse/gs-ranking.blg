@@ -1,0 +1,70 @@
+This is BibTeX, Version 0.99d (TeX Live 2012)
+Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
+The top-level auxiliary file: gs-ranking.aux
+The style file: abbrv.bst
+Database file #1: gs-ranking.bib
+Database file #2: ref1.bib
+Database file #3: ref3.bib
+Repeated entry---line 40 of file ref3.bib
+ : @article{Friedman:2002
+ :                       ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 59 of file ref3.bib
+ : @inproceedings{Ye:2009
+ :                       ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 87 of file ref3.bib
+ : @article{Agarwal:2013:CRW:2461256.2461277
+ :                                          ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 107 of file ref3.bib
+ : @inproceedings{Liu:2010:PNR:1719970.1719976
+ :                                            ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 214 of file ref3.bib
+ : @inproceedings{Li:2010:CAP:1772690.1772758
+ :                                           ,
+I'm skipping whatever remains of this entry
+Warning--can't use both volume and number fields in ESL
+You've used 16 entries,
+            2118 wiz_defined-function locations,
+            612 strings with 7669 characters,
+and the built_in function-call counts, 7553 in all, are:
+= -- 780
+> -- 371
+< -- 11
++ -- 148
+- -- 130
+* -- 548
+:= -- 1171
+add.period$ -- 58
+call.type$ -- 16
+change.case$ -- 112
+chr.to.int$ -- 0
+cite$ -- 17
+duplicate$ -- 298
+empty$ -- 552
+format.name$ -- 130
+if$ -- 1649
+int.to.chr$ -- 0
+int.to.str$ -- 16
+missing$ -- 17
+newline$ -- 83
+num.names$ -- 32
+pop$ -- 120
+preamble$ -- 1
+purify$ -- 97
+quote$ -- 0
+skip$ -- 226
+stack$ -- 0
+substring$ -- 497
+swap$ -- 110
+text.length$ -- 11
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 62
+warning$ -- 1
+while$ -- 70
+width$ -- 18
+write$ -- 201
+(There were 5 error messages)
